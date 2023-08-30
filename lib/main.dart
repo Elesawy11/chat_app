@@ -1,3 +1,4 @@
+import 'package:chat_app/views/signin_view.dart';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
@@ -10,6 +11,12 @@ class ChatApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return  MaterialApp(
+      theme: ThemeData(
+        // fontFamily: 'Kanit',
+      ),
+      debugShowCheckedModeBanner: false,
+      home: SignInView(),
+    );
   }
 }
